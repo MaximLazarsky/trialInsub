@@ -1,0 +1,46 @@
+.registrForm {
+  font-family: "Roboto", sans-serif;
+  width: 480px;
+}
+
+.registrFormTitle {
+  color: #333333;
+  font-weight: bold;
+  size: 32px;
+  margin-bottom: 40px;
+}
+
+.alreadyHaveAcc {
+  color: #333333;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+.alreadyHaveAcc a {
+  font-weight: bold;
+  color: #286efa;
+  text-decoration: none;
+}
+
+.registrFormButton {
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 50px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  background: #ededed;
+  color: #aaaaaa;
+  margin-top: 30px;
+}
+
+.mrBt {
+  margin-bottom: 20px;
+}
+
+.message {
+  color: #777777;
+  font-size: 12px;
+  letter-spacing: 0.26px;
+}
