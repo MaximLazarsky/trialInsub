@@ -30,9 +30,14 @@
   cursor: pointer;
   font-size: 13px;
   font-weight: bold;
+  background: #286efa;
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+.registrFormButton:disabled {
   background: #ededed;
   color: #aaaaaa;
-  margin-top: 30px;
 }
 
 .mrBt {
@@ -43,4 +48,69 @@
   color: #777777;
   font-size: 12px;
   letter-spacing: 0.26px;
+}
+
+.error {
+  color: #f53c3c;
+  margin-bottom: 20px;
+}
+
+.privatePolicy {
+  color: #333333;
+  font-size: 13px;
+  margin-top: 40px;
+}
+
+.privatePolicy a {
+  font-weight: bold;
+  color: #286efa;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 801px) {
+  .registrForm {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .registrForm {
+    width: 320px;
+  }
+
+  .registrFormTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .alreadyHaveAcc {
+    margin-bottom: 20px;
+  }
+  .registrFormButton {
+    margin-top: 15px;
+  }
+  .privatePolicy {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .registrForm {
+    width: 300px;
+  }
+  .registrFormTitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .alreadyHaveAcc {
+    margin-bottom: 10px;
+  }
+  .registrFormButton {
+    margin-top: 10px;
+  }
+  .privatePolicy {
+    margin-top: 10px;
+  }
+  .mrBt {
+    margin-bottom: 10px;
+  }
 }

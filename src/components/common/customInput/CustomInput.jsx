@@ -3,7 +3,7 @@ import './styles-custom-input.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
 
-export default function CustomInput({type, label, value, onChange, width, isValid, className}) {
+export default function CustomInput({type, label, value, onChange, width, isValid, className, onBlur}) {
     const [isVisible, setIsVisible] = useState(false)
     const [targetValue, setTargetValue] = useState(value)
 
@@ -23,6 +23,7 @@ export default function CustomInput({type, label, value, onChange, width, isVali
                 value={value} 
                 type={targetType || "text"} 
                 onChange={onChangeHandler}
+                onBlur={onBlur}
                 style={{borderColor: isValid ? "#ededed" : "#F53C3C"}}
             /> 
             <label 

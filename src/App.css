@@ -1,3 +1,115 @@
 * {
   margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  width: 100%;
+  background: #286efa;
+  display: flex;
+}
+
+.formContainer {
+  width: 1170px;
+  background: #ffffff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.steps {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  color: #333333;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.steps span {
+  margin-right: 10px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #aaaaaa;
+}
+
+.steps span:first-child {
+  margin-left: 15px;
+}
+
+.steps .activeCircle {
+  background: #333333;
+}
+
+.textContentContainer {
+  width: calc(100% - 1170px);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textContentTitle {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 78px;
+}
+
+.textContentDiscription {
+  width: 340px;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.26px;
+}
+
+@media screen and (max-width: 1600px) {
+  .formContainer {
+    width: 50%;
+  }
+  .textContentContainer {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .formContainer {
+    width: 60%;
+  }
+  .textContentContainer {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .formContainer {
+    width: 60%;
+  }
+  .textContentContainer {
+    width: 40%;
+  }
+
+  .textContentTitle {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+
+  .textContentDiscription {
+    width: 240px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .formContainer {
+    width: 100%;
+  }
+  .textContentContainer {
+    display: none;
+  }
 }
